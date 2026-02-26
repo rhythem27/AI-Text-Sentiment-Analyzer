@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import os
 
 # Set page configuration
 st.set_page_config(
@@ -8,8 +9,8 @@ st.set_page_config(
     layout="centered"
 )
 
-# API endpoint
-API_URL = "http://localhost:8000/analyze"
+# API endpoint fetched dynamically or defaulted
+API_URL = os.environ.get("API_URL", "http://localhost:8000/analyze")
 
 # Application Title and Description
 st.title("🤖 AI Text Sentiment Analyzer")
