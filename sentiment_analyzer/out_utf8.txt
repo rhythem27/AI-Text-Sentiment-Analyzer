@@ -1,0 +1,9 @@
+﻿Using version ^5.2.0 for transformers
+Using version ^2.10.0 for torch
+Using version ^0.133.1 for fastapi
+Using version ^0.41.0 for uvicorn
+Using version ^1.54.0 for streamlit
+Using version ^2.32.5 for requests
+
+Updating dependencies
+Resolving dependencies...

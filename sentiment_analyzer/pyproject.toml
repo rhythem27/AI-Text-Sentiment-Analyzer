@@ -1,0 +1,24 @@
+[project]
+name = "sentiment-analyzer"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Rhythem Sharma",email = "rhythemvsharma@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11, <3.13"
+dependencies = [
+    "transformers (>=5.2.0,<6.0.0)",
+    "torch (>=2.10.0,<3.0.0)",
+    "fastapi (>=0.133.1,<0.134.0)",
+    "uvicorn (>=0.41.0,<0.42.0)",
+    "streamlit (>=1.54.0,<2.0.0)",
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "sentiment_analyzer", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
