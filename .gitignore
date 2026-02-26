@@ -1,0 +1,72 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment files
+.env.local
+.env.*.local
+
+# Poetry
+*.poetry.lock  # Ignore this if not intended to manage dependencies globally? We usually keep poetry.lock in VC.
+.poetry-env
+
+# Streamlit/FastAPI Logs & Cache
+*.log
+.pytest_cache/
+.mypy_cache/
+.tox/
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.pid
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# User generated outputs from previous script steps
+out.txt
+output.txt
+out_utf8.txt
+test_output.txt
