@@ -1,0 +1,2 @@
+﻿{'label': 'Positive', 'confidence': 0.9998764991760254}
+{'error': 'Input text cannot be empty'}
