@@ -29,8 +29,8 @@ function Invoke-Cleanup {
 # Attach the termination events directly
 [console]::TreatControlCAsInput = $false
 # To handle graceful exits on Windows gracefully when pressing CTRL + C:
-[System.Console]::CancelKeyPress += {
-    $_.Cancel = $true
+Register-ObjectEvent -InputObject ([System.Console]) -EventName CancelKeyPress -Action {
+    $Event.SourceEventArgs.Cancel = $true
     Invoke-Cleanup
 }
 
